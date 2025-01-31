@@ -31,13 +31,14 @@
     </script>
 </head>
 
+
 <!-- Navbar -->
 <body class="bg-gray-100">
    <!-- Navbar Responsif dengan Login dan Register -->
 <nav class="bg-gradient-to-r from-blue-500 to-indigo-600 p-4 text-white shadow-lg fixed w-full z-50 top-0">
     <div class="container mx-auto flex justify-between items-center">
         <!-- Logo -->
-        <h1 class="text-xl font-extrabold tracking-widest">Privat Al Faiz</h1>
+        <h1 class="text-xl font-extrabold tracking-widest">LMS</h1>
 
         <!-- Tombol Hamburger untuk Mobile -->
         <button id="menu-toggle" class="md:hidden focus:outline-none">
@@ -49,12 +50,12 @@
         <!-- Menu Navigasi -->
         <div class="hidden md:flex space-x-6 items-center" id="menu">
             <a href="#" class="hover:text-yellow-300 transition">Beranda</a>
-            <a href="#" class="hover:text-yellow-300 transition">Paket Belajar</a>
-            <a href="#" class="hover:text-yellow-300 transition">Keunggulan</a>
-            <a href="#" class="hover:text-yellow-300 transition">Testimoni</a>
+            <a href="#paket-belajar" class="hover:text-yellow-300 transition">Paket Belajar</a>
+            <a href="#keunggulan" class="hover:text-yellow-300 transition">Keunggulan</a>
+            <a href="#testimoni" class="hover:text-yellow-300 transition">Testimoni</a>
             <a href="#" class="hover:text-yellow-300 transition">Promo</a>
             <a href="#" class="hover:text-yellow-300 transition">Panduan</a>
-            <a href="#" class="hover:text-yellow-300 transition">FAQ</a>
+            <a href="#FAQ" class="hover:text-yellow-300 transition">FAQ</a>
             <!-- Tombol Login dan Register -->
             <a href="#" class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition">Login</a>
             <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Register</a>
@@ -64,12 +65,12 @@
     <!-- Menu Mobile (Dropdown) -->
     <div class="md:hidden hidden mt-4" id="mobile-menu">
         <a href="#" class="block py-2 hover:text-yellow-300 transition">Beranda</a>
-        <a href="#" class="block py-2 hover:text-yellow-300 transition">Paket Belajar</a>
-        <a href="#" class="block py-2 hover:text-yellow-300 transition">Keunggulan</a>
-        <a href="#" class="block py-2 hover:text-yellow-300 transition">Testimoni</a>
+        <a href="#paket-belajar" class="block py-2 hover:text-yellow-300 transition">Paket Belajar</a>
+        <a href="#keunggulan" class="block py-2 hover:text-yellow-300 transition">Keunggulan</a>
+        <a href="#testimoni" class="block py-2 hover:text-yellow-300 transition">Testimoni</a>
         <a href="#" class="block py-2 hover:text-yellow-300 transition">Promo</a>
         <a href="#" class="block py-2 hover:text-yellow-300 transition">Panduan</a>
-        <a href="#" class="block py-2 hover:text-yellow-300 transition">FAQ</a>
+        <a href="#FAQ" class="block py-2 hover:text-yellow-300 transition">FAQ</a>
         <!-- Tombol Login dan Register untuk Mobile -->
         <a href="#" class="block bg-yellow-500 text-white px-4 py-2 rounded-lg mt-2 hover:bg-yellow-600 transition">Login</a>
         <a href="#" class="block bg-green-500 text-white px-4 py-2 rounded-lg mt-2 hover:bg-green-600 transition">Register</a>
@@ -102,7 +103,7 @@
 
 
     <!-- Paket Belajar -->
-    <section class="container mx-auto mt-16 p-6">
+    <section id="paket-belajar" class="container mx-auto mt-16 p-6">
         <h3 class="text-3xl font-bold text-center text-gray-800 animate-fadeIn">Paket Belajar</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             <div
@@ -130,10 +131,10 @@
     </section>
 
    <!-- Keunggulan -->
-<section class="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
+<section id="keunggulan" class="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
     <div class="container mx-auto text-center">
         <h2 class="text-4xl font-extrabold text-gray-800 mb-6 animate-fadeIn">Keunggulan Kami</h2>
-        <p class="text-xl text-gray-600 mb-10">Mengapa memilih Privat Al Faiz?</p>
+        <p class="text-xl text-gray-600 mb-10">Mengapa memilih Learning Management System (LMS)</p>
         <ul class="space-y-4 text-lg text-gray-700">
             <!-- List Item 1 -->
             <li class="flex items-center justify-center space-x-4 transform transition duration-500 hover:scale-105 hover:shadow-lg p-6 rounded-lg shadow-md hover:bg-blue-100 animate-slideIn">
@@ -161,9 +162,7 @@
 
 
 <!-- Testimoni -->
-<!-- Testimoni -->
-<!-- Testimoni -->
-<section class="py-16 bg-gradient-to-r from-blue-50 to-indigo-100">
+<section id="testimoni" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-100">
     <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold text-gray-800 mb-10 animate-fadeIn">Testimoni Siswa</h2>
         <div class="relative overflow-hidden">
@@ -239,7 +238,7 @@
 
 
 <!-- Frequently Asked Questions (FAQ) -->
-<section class="py-16 bg-gray-50">
+<section id="FAQ" class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
         <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h2>
         <div class="max-w-6xl mx-auto">
@@ -386,3 +385,8 @@
 </body>
 
 </html>
+<style>
+        html {
+            scroll-behavior: smooth; /* Menambahkan efek smooth scrolling */
+        }
+</style>
