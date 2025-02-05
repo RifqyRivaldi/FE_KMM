@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivaldi</title>
+    <title>E-Learning</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script>
@@ -51,29 +51,29 @@
         <div class="hidden md:flex space-x-6 items-center" id="menu">
             <a href="#" class="hover:text-yellow-300 transition">Beranda</a>
             <a href="#paket-belajar" class="hover:text-yellow-300 transition">Paket Belajar</a>
+            <a href="#CAT" class="hover:text-yellow-300 transition">CAT</a>
             <a href="#keunggulan" class="hover:text-yellow-300 transition">Keunggulan</a>
             <a href="#testimoni" class="hover:text-yellow-300 transition">Testimoni</a>
-            <a href="#" class="hover:text-yellow-300 transition">Promo</a>
             <a href="#" class="hover:text-yellow-300 transition">Panduan</a>
             <a href="#FAQ" class="hover:text-yellow-300 transition">FAQ</a>
             <!-- Tombol Login dan Register -->
-            <a href="#" class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition">Login</a>
-            <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Register</a>
+            <a href="login" class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition">Login</a>
+            <a href="register" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">Register</a>
         </div>
     </div>
-
+    
     <!-- Menu Mobile (Dropdown) -->
     <div class="md:hidden hidden mt-4" id="mobile-menu">
         <a href="#" class="block py-2 hover:text-yellow-300 transition">Beranda</a>
         <a href="#paket-belajar" class="block py-2 hover:text-yellow-300 transition">Paket Belajar</a>
+        <a href="#CAT" class="block py-2 hover:text-yellow-300 transition">CAT</a>
         <a href="#keunggulan" class="block py-2 hover:text-yellow-300 transition">Keunggulan</a>
         <a href="#testimoni" class="block py-2 hover:text-yellow-300 transition">Testimoni</a>
-        <a href="#" class="block py-2 hover:text-yellow-300 transition">Promo</a>
         <a href="#" class="block py-2 hover:text-yellow-300 transition">Panduan</a>
         <a href="#FAQ" class="block py-2 hover:text-yellow-300 transition">FAQ</a>
         <!-- Tombol Login dan Register untuk Mobile -->
-        <a href="#" class="block bg-yellow-500 text-white px-4 py-2 rounded-lg mt-2 hover:bg-yellow-600 transition">Login</a>
-        <a href="#" class="block bg-green-500 text-white px-4 py-2 rounded-lg mt-2 hover:bg-green-600 transition">Register</a>
+        <a href="login" class="block bg-yellow-500 text-white px-4 py-2 rounded-lg mt-2 hover:bg-yellow-600 transition">Login</a>
+        <a href="register" class="block bg-green-500 text-white px-4 py-2 rounded-lg mt-2 hover:bg-green-600 transition">Register</a>
     </div>
 </nav>
 
@@ -90,48 +90,85 @@
     <!-- Hero Section -->
     <section class="relative h-screen bg-cover bg-center" style="background-image: url('/static/Hero.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="absolute inset-0 flex items-center justify-center text-white z-10 text-center fade-in">
-            <div>
+        <div class="absolute inset-0 flex items-center justify-between text-white z-10 px-8">
+            <div class="text-center fade-in">
                 <h2 class="text-5xl font-bold mb-4">Belajar Bareng Super Teacher</h2>
                 <p class="text-xl mb-6">Jadikan belajarmu lebih menyenangkan dan efektif!</p>
                 <a href="#daftar"
                     class="bg-yellow-500 text-white py-3 px-6 rounded-lg text-lg font-semibold shadow-md hover:bg-yellow-600 transition">Daftar
                     Sekarang</a>
             </div>
+            <div class="fade-in">
+                <img src="/static/home1.png" alt="Belajar Seru" class="w-auto h-auto rounded-lg ">
+            </div>
         </div>
     </section>
 
-
     <!-- Paket Belajar -->
-    <section id="paket-belajar" class="container mx-auto mt-16 p-6">
+    <section id="paket-belajar" class="container mx-auto mt-16 p-6 fade-in-up">
         <h3 class="text-3xl font-bold text-center text-gray-800 animate-fadeIn">Paket Belajar</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             <div
                 class="bg-white p-8 shadow-lg rounded-lg text-center border-t-4 border-blue-500 transform hover:scale-105 transition">
-                <h4 class="text-2xl font-bold">Paket Basic</h4>
-                <p class="mt-3 text-gray-600">Mulai dari dasar hingga memahami konsep utama.</p>
+                <h4 class="text-2xl font-bold">Paket Vidio</h4>
+                <p class="mt-3 text-gray-600">Belajar online melalui pembelajaran yang interaktif</p>
                 <button
-                    class="mt-5 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">Pilih</button>
+                   class="mt-5 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">Pilih</button>
             </div>
             <div
                 class="bg-white p-8 shadow-lg rounded-lg text-center border-t-4 border-green-500 transform hover:scale-105 transition">
-                <h4 class="text-2xl font-bold">Paket Pro</h4>
-                <p class="mt-3 text-gray-600">Pendalaman materi dengan tutor berpengalaman.</p>
+                <h4 class="text-2xl font-bold">Paket Soal</h4>
+                <p class="mt-3 text-gray-600">Belajar mengerjakan soal untuk menghadapi ujian</p>
+                <a href="paket_soal">
                 <button
-                    class="mt-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition">Pilih</button>
+                 class="mt-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition">Pilih</button>
+                 </a>
             </div>
             <div
                 class="bg-white p-8 shadow-lg rounded-lg text-center border-t-4 border-yellow-500 transform hover:scale-105 transition">
-                <h4 class="text-2xl font-bold">Paket Premium</h4>
-                <p class="mt-3 text-gray-600">Eksklusif dengan materi lanjutan dan sesi privat.</p>
+                <h4 class="text-2xl font-bold">Paket Lengkap</h4>
+                <p class="mt-3 text-gray-600">Eksklusif dengan materi lanjutan dan.</p>
                 <button
                     class="mt-5 bg-yellow-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-yellow-600 transition">Pilih</button>
             </div>
         </div>
     </section>
 
+    <!-- CAT -->
+    <div id="CAT" class="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 p-6 fade-in-up">
+    <div class="bg-white p-8 rounded-2xl shadow-2xl text-center max-w-lg transform transition-all duration-700 opacity-0 translate-y-10 animate-fade-in">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+            🚀 Siap Menghadapi Simulasi CAT?
+        </h2>
+        <p class="text-lg text-gray-600 mb-6">
+            Tantang dirimu dengan soal-soal berbasis komputer dan tingkatkan persiapanmu sekarang!
+        </p>
+        <a href="simulasi.php" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+            Mulai Simulasi 🎯
+        </a>
+    </div>
+</div>
+
+<style>
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in {
+        animation: fade-in 1s ease-out forwards;
+    }
+</style>
+
+
    <!-- Keunggulan -->
-<section id="keunggulan" class="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
+<section id="keunggulan" class="py-16 bg-gradient-to-r from-blue-50 to-blue-100 fade-in-up">
     <div class="container mx-auto text-center">
         <h2 class="text-4xl font-extrabold text-gray-800 mb-6 animate-fadeIn">Keunggulan Kami</h2>
         <p class="text-xl text-gray-600 mb-10">Mengapa memilih Learning Management System (LMS)</p>
@@ -162,7 +199,7 @@
 
 
 <!-- Testimoni -->
-<section id="testimoni" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-100">
+<section id="testimoni" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-100 fade-in-up">
     <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold text-gray-800 mb-10 animate-fadeIn">Testimoni Siswa</h2>
         <div class="relative overflow-hidden">
@@ -238,7 +275,7 @@
 
 
 <!-- Frequently Asked Questions (FAQ) -->
-<section id="FAQ" class="py-16 bg-gray-50">
+<section id="FAQ" class="py-16 bg-gray-50 fade-in-up">
     <div class="container mx-auto px-4">
         <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h2>
         <div class="max-w-6xl mx-auto">
@@ -385,8 +422,37 @@
 </body>
 
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".fade-in-up");
+
+        function revealOnScroll() {
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add("opacity-100", "translate-y-0");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    });
+</script>
 <style>
         html {
             scroll-behavior: smooth; /* Menambahkan efek smooth scrolling */
         }
+        .fade-in-up {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+    }
+
+    .fade-in-up.opacity-100 {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
